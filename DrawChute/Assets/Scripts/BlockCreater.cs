@@ -9,8 +9,11 @@ public class BlockCreater : MonoBehaviour
     [Header("Paths")]
     public List<Vector2> mousePath = new List<Vector2>();
     public List<Vector2> createdPath = new List<Vector2>();
-
+    
+    //Gap between blocks
     public float gap = .5f;
+    //Distance of units from the camera
+    public float distance;
     public List<GameObject> blockList = new List<GameObject>();
     
     public GameObject blockPrefab;
@@ -20,7 +23,7 @@ public class BlockCreater : MonoBehaviour
 
         if (Input.GetMouseButton(0))
         {
-
+            //Clear blockList and mousePath every time player start the game
             if (blockList.Count != 0)
             {
                 for (int i = 0; i < blockList.Count; i++)
@@ -34,8 +37,8 @@ public class BlockCreater : MonoBehaviour
             }
             
             var mousePos = Input.mousePosition;
-            //Distance of units from the camera
-            mousePos.z = 10;
+            
+            mousePos.z = distance;
             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
             mousePath.Add(mousePos);
         }
