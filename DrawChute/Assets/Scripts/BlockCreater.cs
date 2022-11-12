@@ -11,7 +11,7 @@ public class BlockCreater : MonoBehaviour
     public List<Vector2> createdPath = new List<Vector2>();
     
     //Gap between blocks
-    public float gap = .5f;
+    public float gap;
     //Distance of units from the camera
     public float distance;
     public List<GameObject> blockList = new List<GameObject>();
