@@ -168,7 +168,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mousePath: []
   createdPath: []
-  gap: 0.5
+  gap: 0.2
+  distance: 10
   blockList: []
   blockPrefab: {fileID: 8050445090144699343, guid: 563ab57e0c1d0f347bcb2b4c45173b86, type: 3}
 --- !u!1 &269687524
