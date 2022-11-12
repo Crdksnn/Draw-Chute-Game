@@ -38,8 +38,6 @@ public class LineDrawer : MonoBehaviour
         
         if (Input.GetMouseButton(0))
         {
-            Debug.DrawRay(Camera.main.ScreenToWorldPoint(Input.mousePosition), GetMousePosition(), Color.red);
-            
             linePoints.Add(GetMousePosition());
             drawLine.positionCount = linePoints.Count;
             drawLine.SetPositions(linePoints.ToArray());
