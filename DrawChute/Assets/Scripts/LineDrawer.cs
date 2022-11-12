@@ -6,7 +6,7 @@ public class LineDrawer : MonoBehaviour
 {
     public List<Vector3> linePoints = new List<Vector3>();
     
-    [Header("Distance of units from the camera")]
+    //Distance of units from the camera
     public float distance;
     
     private GameObject newLine;
